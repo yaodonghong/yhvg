@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'YaoDong_Example', :exclusive => true do
+  pod 'YaoDong', :path => '../'
+end
+
+target 'YaoDong_Tests', :exclusive => true do
+  pod 'YaoDong', :path => '../'
+
+  pod 'FBSnapshotTestCase'
+end
